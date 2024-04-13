@@ -2,7 +2,7 @@
 This ROS package contains a motor_controller node that subscribes to motor control commands and performs basic functionalities such as starting, stopping, and setting velocity.
 
 ## Prerequisites
-* ROS (Robot Operating System) installed. You can install ROS by following the instructions here.
+* ROS (Robot Operating System) installed. You can install ROS by following the instructions [here](https://wiki.ros.org/melodic/Installation/Ubuntu).
 
 ## Building the Package
 To build the motor_controller_pkg package, follow these steps:
