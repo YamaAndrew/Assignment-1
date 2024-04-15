@@ -7,16 +7,19 @@ This ROS package contains a motor_controller node that subscribes to motor contr
 ## Building the Package
 To build the motor_controller_pkg package, follow these steps:
 
-1. Clone this repository into your catkin workspace's src directory:
+1. Build Catkin Workspace:
+```
+mkdir -p ~/catkin_ws/src
+cd ~/catkin_ws/src
+catkin_init_workspace
+```
+2. Clone this repository into your catkin workspace's src directory:
 ```
 git clone https://github.com/YamaAndrew/Assignment-1.git
 ```
-2. Navigate to your catkin workspace:
+3. Build the package in the catkin_ws:
 ```
-cd /path/to/your/catkin_workspace
-```
-3. Build the package using catkin_make:
-```
+cd ..
 catkin_make
 ```
 4. Start a rosmaster
@@ -25,7 +28,7 @@ roscore
 ```
 
 ## Running the motor_controller Node
-Once the package is built, you can run the motor_controller node (in a new terminal) using the following steps:
+**In a new terminal**, run the motor_controller node using the following steps:
 
 1. Make sure your ROS environment is set up properly by sourcing your workspace:
 ```
@@ -38,7 +41,7 @@ rosrun motor_controller_pkg motor_controller
 ```
 
 ## Testing the Node
-To test the motor_controller node, you can publish messages to the /motor_commands topic using the rostopic pub command (in a new terminal). For example:
+**In a new terminal, publish messages to the /motor_commands topic using the rostopic pub command. For example:
 
 To start the motor:
 ```
