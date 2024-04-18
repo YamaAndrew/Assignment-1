@@ -41,7 +41,7 @@ rosrun motor_controller_pkg motor_controller
 ```
 
 ## Testing the Node
-**In a new terminal, publish messages to the /motor_commands topic using the rostopic pub command. For example:
+**In a new terminal**, publish messages to the /motor_commands topic using the rostopic pub command. For example:
 
 To start the motor:
 ```
@@ -54,6 +54,11 @@ rostopic pub /motor_commands motor_controller_pkg/MotorCommand "command: 'stop'"
 To set the velocity to a specific value (e.g., 1.5):
 ```
 rostopic pub /motor_commands motor_controller_pkg/MotorCommand "command: 'velocity', velocity: 1.5"
+```
+
+**Make sure your ROS environment is set up properly by sourcing your workspace for this step:**
+```
+source /path/to/your/catkin_workspace/devel/setup.bash
 ```
 
 ## Message Format
